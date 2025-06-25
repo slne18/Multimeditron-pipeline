@@ -23,4 +23,14 @@ Usage: `python generate_train_all.py`
 ## 5. `train_all.sh`: Runs multiple training configurations sequentially for the CLIP model.
 `nohup bash train_all.sh > train_all.log 2>&1 &`
 
+# 🏋️ CLIP Modality Expert Training — Step Summary
+
+| Step | Description                                               | Output                       | Key Scripts                |
+| ---- | --------------------------------------------------------- | ---------------------------- | -------------------------- |
+| 0    | Install dependencies                                      | —                            | `requirements_experts.txt` |
+| 1    | Generate training config files                            | `.yaml` files (configs)      | `config_maker.py`          |
+| 2    | Fine-tune CLIP on a single config                         | Trained model checkpoints    | `train_clip.py`            |
+| 3    | *(Optional)* Generate a shell script to train all configs | `train_all.sh`               | `generate_train_all.py`    |
+| 4    | Run all trainings sequentially                            | Logs + checkpoints per model | `train_all.sh`             |
+
 
