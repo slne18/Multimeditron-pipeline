@@ -44,7 +44,7 @@ Models are trained to align image and text representations using contrastive lea
 
 ---
 
-## 📁 4. `evaluation/` — Model Evaluation
+## 📁 4. `evaluation_accuracy/` — Models' Accuracy and Precision Evaluation
 
 This folder includes scripts to **evaluate the trained models** on downstream tasks such as:
 
@@ -58,9 +58,9 @@ It uses benchmark datasets like GMAI-MMBench and computes metrics such as **accu
 
 ## ✅ Summary
 
-| Folder                      | Purpose                                  | Run Order |
-| --------------------------- | ---------------------------------------- | --------- |
-| `clean_extract_modalities/` | Clean & split data by modality           | 1         |
-| `prepro_specific_modality/` | Preprocess data for a target modality    | 2         |
-| `training/`                 | Train CLIP multimodal model.             | 3         |
-| `evaluation/`               | Evaluate model performance on benchmarks | 4         |
+| Folder                      | Purpose                                               | Run Order |
+| --------------------------- | ------------------------------------------------------| --------- |
+| `clean_extract_modalities/` | Clean & split data by modality                        | 1         |
+| `prepro_specific_modality/` | Preprocess data for a target modality                 | 2         |
+| `training/`                 | Train CLIP multimodal model.                          | 3         |
+| `evaluation_accuracy/`      | Evaluate models' accuracy and precision on benchmarks | 4         |
