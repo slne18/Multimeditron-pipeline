@@ -132,6 +132,15 @@ metrics_eval/
 
 ---
 
+| Step | Description                                         | Output Folder                               | Key Scripts                           |
+| ---- | --------------------------------------------------- | ------------------------------------------- | ------------------------------------- |
+| 1    | **Generate predictions** with and without reasoning | `outputs_benchmarks/`                       | `benchmarking_<model>.py`             |
+| 2    | **Clean missing/invalid entries**                   | `outputs_benchmarks/clean_missing_entries/` | `clean_missing_entries.py`            |
+| 3    | **Compute accuracy & precision**                    | `metrics_eval/`                             | `compute_accuracy.py`                 |
+| 4    | *(Optional)* Manually integrate external results    | `metrics_eval/`                             | — (done inside `compute_accuracy.py`) |
+
+---
+
 ## 📌 Notes
 
 * Accuracy is computed **only on answered questions** where the predicted letter could be extracted.
