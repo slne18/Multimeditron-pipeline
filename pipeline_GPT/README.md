@@ -1,4 +1,3 @@
-Parfait ! Voici le **README complet prêt à copier-coller**, avec le bon nom `GPT_generation` et tout bien formaté :
 
 ---
 
