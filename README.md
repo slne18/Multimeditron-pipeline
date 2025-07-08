@@ -64,7 +64,14 @@ This folder handles **qualitative evaluation** of model responses using GPT-4 an
 This is where you must place the outputs (`cleaned_answers.jsonl`) from the models after evaluation.  
 Each model should have its own subfolder inside `evaluation/`:
 
-<pre> GPT_pipeline/ └── evaluation/ ├── gemma/ │ └── cleaned_answers.jsonl ├── qwen/ │ └── cleaned_answers.jsonl └── multimeditron/ └── cleaned_answers.jsonl </pre>
+<pre> GPT_pipeline/ 
+   └── evaluation/ 
+      ├── gemma/ 
+         │ └── cleaned_answers.jsonl 
+      ├── qwen/ 
+         │ └── cleaned_answers.jsonl 
+      └── multimeditron/ 
+         └── cleaned_answers.jsonl </pre>
 
 ### 🔹 `gpt_generation/`
 This subfolder contains **three distinct pipelines** that interface with the OpenAI API:
