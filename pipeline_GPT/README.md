@@ -1,7 +1,4 @@
 
----
-
-````markdown
 # 🧠 MultiMeditron Pipeline
 
 This repository contains code for evaluating and comparing multimodal language models (LLMs) on the GMAI-MMBench benchmark.
