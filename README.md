@@ -96,4 +96,4 @@ This subfolder contains **three distinct pipelines** that interface with the Ope
 | `prepro_specific_modality/` | Preprocess data for a target modality                     | 2         |
 | `training/`                 | Train CLIP multimodal model.                              | 3         |
 | `evaluation_accuracy/`      | Evaluate models' accuracy and precision on benchmarks     | 4         |
-| `GPT_pipeline/	            | Run GPT-based evaluation: extraction, scoring, comparison	| 5         |
+| `GPT_pipeline/`	            | Run GPT-based evaluation: extraction, scoring, comparison	| 5         |
