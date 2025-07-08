@@ -63,6 +63,7 @@ This folder handles **qualitative evaluation** of model responses using GPT-4 an
 ### 🔹 `evaluation/`
 This is where you must place the outputs (`cleaned_answers.jsonl`) from the models after evaluation.  
 Each model should have its own subfolder inside `evaluation/`:
+
 GPT_pipeline/
 └── evaluation/
 ├── gemma/
