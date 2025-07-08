@@ -1,0 +1,13 @@
+nohup: ignoring input
+
+Processing batches_answer_extraction/multimeditron:   0%|          | 0/1 [00:00<?, ?it/s]
+Processing batches_answer_extraction/multimeditron: 100%|██████████| 1/1 [00:01<00:00,  1.35s/it]
+Processing batches_answer_extraction/multimeditron: 100%|██████████| 1/1 [00:01<00:00,  1.35s/it]
+
+Processing batches_answer_extraction/gemma:   0%|          | 0/1 [00:00<?, ?it/s]
+Processing batches_answer_extraction/gemma: 100%|██████████| 1/1 [00:02<00:00,  2.32s/it]
+Processing batches_answer_extraction/gemma: 100%|██████████| 1/1 [00:02<00:00,  2.32s/it]
+
+Processing batches_answer_extraction/qwen:   0%|          | 0/1 [00:00<?, ?it/s]
+Processing batches_answer_extraction/qwen: 100%|██████████| 1/1 [00:01<00:00,  1.56s/it]
+Processing batches_answer_extraction/qwen: 100%|██████████| 1/1 [00:01<00:00,  1.56s/it]

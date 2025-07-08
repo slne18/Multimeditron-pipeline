@@ -1,0 +1,13 @@
+nohup: ignoring input
+
+Processing model: multimeditron
+Merged answers saved to: output_answer_extraction/multimeditron/merged_answers.jsonl
+No letter extracted for 44 responses.
+
+Processing model: gemma
+Merged answers saved to: output_answer_extraction/gemma/merged_answers.jsonl
+No letter extracted for 85 responses.
+
+Processing model: qwen
+Merged answers saved to: output_answer_extraction/qwen/merged_answers.jsonl
+No letter extracted for 49 responses.

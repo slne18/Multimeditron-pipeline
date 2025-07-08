@@ -1,0 +1,5 @@
+nohup: ignoring input
+Batch batch_685afc76c5fc81909da6f91dd421ad78 has not yet been processed, wait and try again later
+[output_eval/gemma] Saved 4238 results to final_eval.jsonl
+Batch batch_685b1d04cb0481908db2c63fc8324d01 has not yet been processed, wait and try again later
+[output_eval/qwen] Saved 4549 results to final_eval.jsonl

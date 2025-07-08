@@ -1,0 +1,19 @@
+nohup: ignoring input
+
+Processing dataset:   0%|          | 0/531 [00:00<?, ?it/s]
+Processing dataset: 100%|██████████| 531/531 [00:00<00:00, 5527.72it/s]
+Preprocessed data saved to batches_answer_extraction/multimeditron in 1 files.
+
+Processing dataset:   0%|          | 0/2615 [00:00<?, ?it/s]
+Processing dataset:  21%|██▏       | 560/2615 [00:00<00:00, 5596.43it/s]
+Processing dataset:  44%|████▍     | 1145/2615 [00:00<00:00, 5740.77it/s]
+Processing dataset:  67%|██████▋   | 1745/2615 [00:00<00:00, 5855.40it/s]
+Processing dataset:  90%|████████▉ | 2345/2615 [00:00<00:00, 5909.57it/s]
+Processing dataset: 100%|██████████| 2615/2615 [00:00<00:00, 5867.20it/s]
+Preprocessed data saved to batches_answer_extraction/gemma in 1 files.
+
+Processing dataset:   0%|          | 0/842 [00:00<?, ?it/s]
+Processing dataset:  65%|██████▍   | 546/842 [00:00<00:00, 5452.35it/s]
+Processing dataset: 100%|██████████| 842/842 [00:00<00:00, 5488.90it/s]
+Preprocessed data saved to batches_answer_extraction/qwen in 1 files.
+

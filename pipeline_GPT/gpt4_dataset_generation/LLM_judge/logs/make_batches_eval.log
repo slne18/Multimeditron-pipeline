@@ -1,0 +1,7 @@
+nohup: ignoring input
+Processing dataset:   0%|          | 0/1352 [00:00<?, ?it/s]Processing dataset: 100%|██████████| 1352/1352 [00:00<00:00, 83825.32it/s]
+Preprocessed data saved to batches_eval/multimeditron in 1 files.
+Processing dataset:   0%|          | 0/4240 [00:00<?, ?it/s]Processing dataset: 100%|██████████| 4240/4240 [00:00<00:00, 95613.63it/s]
+Preprocessed data saved to batches_eval/gemma in 1 files.
+Processing dataset:   0%|          | 0/4550 [00:00<?, ?it/s]Processing dataset: 100%|██████████| 4550/4550 [00:00<00:00, 104487.87it/s]
+Preprocessed data saved to batches_eval/qwen in 1 files.

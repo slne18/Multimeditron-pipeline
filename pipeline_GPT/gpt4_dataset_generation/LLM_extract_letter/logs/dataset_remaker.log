@@ -1,0 +1,6 @@
+nohup: ignoring input
+[output_answer_extraction/multimeditron] Saved 531 results to final_extracted_answers.jsonl
+
+[output_answer_extraction/gemma] Saved 2615 results to final_extracted_answers.jsonl
+
+[output_answer_extraction/qwen] Saved 842 results to final_extracted_answers.jsonl
