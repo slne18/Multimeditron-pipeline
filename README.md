@@ -1,6 +1,6 @@
 # 🧠 MultiMeditron – Pipeline Overview
 
-This repository is organized into **four main folders**, each representing a key step in the pipeline — from data cleaning to training and evaluation of multimodal models (e.g., CLIP variants).
+This repository is organized into **five main folders**, each representing a key step in the pipeline — from data cleaning to training and evaluation of multimodal models (e.g., CLIP variants).
 
 ⚠️ Make sure to modify the paths inside the different scripts where needed !
 
@@ -56,11 +56,44 @@ It uses benchmark datasets like GMAI-MMBench and computes metrics such as **accu
 
 ---
 
+## 📁 5. `GPT_pipeline/` — GPT-Based Qualitative Evaluation
+
+This folder handles **qualitative evaluation** of model responses using GPT-4 and includes two subfolders:
+
+### 🔹 `evaluation/`
+This is where you must place the outputs (`cleaned_answers.jsonl`) from the models after evaluation.  
+Each model should have its own subfolder inside `evaluation/`:
+GPT_pipeline/
+└── evaluation/
+├── gemma/
+│ └── cleaned_answers.jsonl
+├── qwen/
+│ └── cleaned_answers.jsonl
+└── multimeditron/
+└── cleaned_answers.jsonl
+
+
+### 🔹 `gpt_generation/`
+This subfolder contains **three distinct pipelines** that interface with the OpenAI API:
+
+1. **Answer Extraction**  
+   Extract the predicted letter (A, B, C, D…) from free-form model outputs.
+
+2. **Qualitative Scoring**  
+   Use GPT-4 to score model answers on criteria like accuracy, completeness, instruction following, communication, and context awareness.
+
+3. **Model Comparison**  
+   Directly compare two model answers to the same question (pairwise judgment with preferred response and per-criterion scores).
+
+---
+
+
 ## ✅ Summary
 
-| Folder                      | Purpose                                               | Run Order |
-| --------------------------- | ------------------------------------------------------| --------- |
-| `clean_extract_modalities/` | Clean & split data by modality                        | 1         |
-| `prepro_specific_modality/` | Preprocess data for a target modality                 | 2         |
-| `training/`                 | Train CLIP multimodal model.                          | 3         |
-| `evaluation_accuracy/`      | Evaluate models' accuracy and precision on benchmarks | 4         |
+| Folder                      | Purpose                                                   | Run Order |
+| --------------------------- | --------------------------------------------------------- | --------- |
+| `clean_extract_modalities/` | Clean & split data by modality                            | 1         |
+| `prepro_specific_modality/` | Preprocess data for a target modality                     | 2         |
+| `training/`                 | Train CLIP multimodal model.                              | 3         |
+| `evaluation_accuracy/`      | Evaluate models' accuracy and precision on benchmarks     | 4         |
+| `GPT_pipeline/	            | Run GPT-based evaluation: extraction, scoring, comparison	| 5         |
