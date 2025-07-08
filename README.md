@@ -56,7 +56,7 @@ It uses benchmark datasets like GMAI-MMBench and computes metrics such as **accu
 
 ---
 
-## 📁 5. `GPT_pipeline/` — GPT-Based Qualitative Evaluation
+## 📁 5. `pipeline_GPT/` — GPT-Based Qualitative Evaluation
 
 This folder handles **qualitative evaluation** of model responses using GPT-4 and includes two subfolders:
 
@@ -96,4 +96,4 @@ This subfolder contains **three distinct pipelines** that interface with the Ope
 | `prepro_specific_modality/` | Preprocess data for a target modality                     | 2         |
 | `training/`                 | Train CLIP multimodal model.                              | 3         |
 | `evaluation_accuracy/`      | Evaluate models' accuracy and precision on benchmarks     | 4         |
-| `GPT_pipeline/`	            | Run GPT-based evaluation: extraction, scoring, comparison	| 5         |
+| `pipeline_GPT/`	            | Run GPT-based evaluation: extraction, scoring, comparison	| 5         |
