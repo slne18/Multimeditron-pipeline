@@ -1,4 +1,5 @@
 import os
+import random
 import math
 import json
 import pyarrow as pa
@@ -20,9 +21,22 @@ def get_list(folder_list):
     
     return dataset
 
+train_rate = 0.8 
+
 folders = ((count_subfolders(path)))
-print(len(folders))
-dataset = get_list(folders)
-with open(path + "/Ultrasound_all.jsonl", "w", encoding="utf-8") as f:
-    for record in dataset:
+train_folders = random.sample(folders, math.floor(train_rate*len(folders)))
+test_folders = [x for x in folders if x not in train_folders]
+
+dataset_train = get_list(train_folders)
+dataset_test = get_list(test_folders)
+
+
+with open(path + "/Ultrasound_train.jsonl", "w", encoding="utf-8") as f:
+    for record in dataset_train:
         f.write(record + "\n")
+
+dataset_test = get_list(test_folders)
+with open(path + "/Ultrasound_test.jsonl", "w", encoding="utf-8") as f:
+    for record in dataset_test:
+        f.write((record) + "\n")
+
