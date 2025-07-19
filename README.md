@@ -1,6 +1,6 @@
 # 🧠 MultiMeditron – Pipeline Overview
 
-This repository is organized into **five main folders**, each representing a key step in the pipeline — from data cleaning to training and evaluation of multimodal models (e.g., CLIP variants).
+This repository is organized into **six main folders**, each representing a key step in the pipeline — from data cleaning to training and evaluation of multimodal models (e.g., CLIP variants).
 
 ⚠️ Make sure to modify the paths inside the different scripts where needed !
 
